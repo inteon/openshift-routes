@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "openshift-routes.fullname" . }}
+  name: {{ include "openshift-routes.fullname" . }}-controller
   namespace: {{ include "openshift-routes.namespace" . }}
   labels:
     {{- include "openshift-routes.labels" . | nindent 4 }}
